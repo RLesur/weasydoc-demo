@@ -1,6 +1,10 @@
 ---
 title: "Untitled"
 author: "Your Name"
+margin-left: 15%
+margin-right: 15%
+margin-top: 12%
+margin-bottom: 18%
 output: weasydoc::wpdf_document
 ---
 
