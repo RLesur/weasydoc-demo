@@ -1,4 +1,4 @@
-FROM rlesur/weasydoc:3.5
+FROM rlesur/weasydoc:latest
 
 ENV NB_USER rstudio
 ENV NB_UID 1000
