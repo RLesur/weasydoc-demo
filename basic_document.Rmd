@@ -1,5 +1,5 @@
 ---
-title: "PDF Generation with CCS for Paged Media"
+title: "A Template with CCS Paged Media"
 author: "Romain Lesur"
 date: |
   `r format(Sys.time(), '%d %B, %Y')`
