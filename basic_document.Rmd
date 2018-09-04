@@ -1,10 +1,10 @@
 ---
-title: "Untitled"
-author: "Your Name"
+title: "PDF Generation with CCS for Paged Media"
+author: "Romain Lesur"
 date: |
   `r format(Sys.time(), '%d %B, %Y')`
 lang: en-US
-output: weasydoc::wpdf_document
+output: weasydoc::hpdf_document
 ---
 
 ```{r setup, include=FALSE}
@@ -43,7 +43,7 @@ The default value is 1. If you want double line spacing, you can set the `linehe
 
 ### Using a `sans-serif` main font
 
-The defaut main font is a `serif` font. If you prefer a `sans-serif` font, you can add the `sans-serif: true` option to the `YAML` header.
+The defaut main font is a `serif` font. If you prefer a `sans-serif` font, you can add the `main-sans-serif: true` option to the `YAML` header.
 
 ### Specify `mainfont`
 
@@ -52,6 +52,10 @@ With `mainfont`, you can change the main font for the document.
 ### Specify `monofont`
 
 You can change `monofont`.
+
+### Font titles
+
+Use `titlefont` or `title-serif`.
 
 ### monofontsize
 
@@ -62,6 +66,10 @@ The text is justified by default. You can modify this behavior with the `textali
 ### Page counter
 
 You can add page counter with the `pagecounter` variable
+
+### Number sections
+
+Use `number-sections`.
 
 ## Built-in classes
 
