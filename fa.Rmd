@@ -20,3 +20,21 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 <i class="fa fa-file"></i> 
 
 The R project fa icon: <i class="fab fa-r-project"></i>
+
+```{r echo=FALSE}
+fa_r <- fontawesome::fa("r-project")
+fa_r_raw <- charToRaw(fa_r)
+fa_r_enc <- paste0("data:image/svg+xml;charset=utf-8;base64,", 
+                   base64enc::base64encode(fa_r_raw))
+```
+
+R project icon : <img alt="R project" src="`r fa_r_enc`">
+
+voici un png
+
+```{r, echo=FALSE}
+tmpfile <- tempfile(fileext = ".png")
+fontawesome::fa_png("r-project", tmpfile)
+knitr::include_graphics(tmpfile)
+```
+
