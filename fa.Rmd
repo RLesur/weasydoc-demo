@@ -1,0 +1,22 @@
+---
+title: "Font Awesome as Web Font" 
+author: "Romain Lesur" 
+date: | 
+  `r format(Sys.time(), '%d %B, %Y')`
+lang: en-US
+pagecounter: "bottom-center"
+output: 
+  weasydoc::hpdf_document:
+    number_sections: true
+    keep_html: true
+---
+
+Following <https://github.com/rstudio/rmarkdown/issues/813#issuecomment-260742550>, this works for both `WeasyPrint`
+
+```{r setup, include=FALSE}
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+```
+
+<i class="fa fa-file"></i> 
+
+The R project fa icon: <i class="fab fa-r-project"></i>
